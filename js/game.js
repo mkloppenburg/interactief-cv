@@ -94,7 +94,7 @@ charactersMap.forEach((row, i) => {
           animate: true,
           dialogue: ['Maarten zeg je? Die ken ik al van jongs af aan. Ik heb hem zien groeien van een 8-bit kindje, tot de grote man die hij nu is! ...', 
           'Hij fiets hierboven regelmatig door het bos. Of hij loopt er met zijn kinderen. ...',
-        'Of hij zit een dorpje verderop op het terras of in de bioscoop. Gek op filmpjes kijken die man. ...',
+        'Of hij zit een dorpje verderop op het terras of in de bioscoop. Gek op filmpjes kijken die man. Ook sleutelt hij graag met computers en gamen is hij altijd wel voor in! ...',
       'Een echte levensgenieter en familieman!']
         })
       )
@@ -114,7 +114,7 @@ charactersMap.forEach((row, i) => {
           },
           scale: 3,
           animate: true,
-          dialogue: ['Best warm zo\'n winterjas, ik krijg \'m maar niet uit! Hoe dan ook... Maarten? Ja, die heeft al best diplomas en certificaten. ...', 
+          dialogue: ['Best warm zo\'n winterjas, ik krijg \'m maar niet uit! Hoe dan ook... Maarten? Ja, die heeft al best wat diplomas en certificaten. ...', 
           'MBO ICT... HBO Theologie... Heel wat cursussen richting IT gedaan... En pas nog, bij een bootcamp van Young Capital certificaten voor EXIN Agile Scrum, ISTQB Foundation en Microsoft Azure Fundamentals behaald!',
           'Misschien een keer zijn CV bekijken? Die staat volgens mij hiernaast...'
         ]
@@ -137,10 +137,10 @@ charactersMap.forEach((row, i) => {
           scale: 3,
           animate: true,
           dialogue: ['Of hij werkervaring heeft? Jazeker wel. ...', 
-          'Op dit moment werkt hij voor Young Capital. Daar doet hij een IT Traineeship richting DevOps. Ik weet dat hij na zijn MBO-ICT iets anders op het HBO geleerd had, maar hij kwam er achter dat de IT toch echt zijn passie heeft. ...',
-          'Daarvoor is hij een tijdje full-time ouder geweest. Vonden ze daar belangrijk, dat er iemand thuis was voor hun kinderen.',
+          'Op dit moment werkt hij voor Young Capital. Daar doet hij een IT Traineeship richting DevOps. Na zijn MBO-ICT had hij een HBO Theologie opleiding gevolgd, maar hij kwam er na die opleiding toch achter dat de IT echt zijn passie heeft. ...',
+          'Daarvoor is hij een tijdje full-time ouder geweest. Vonden ze daar belangrijk, dat er iemand thuis was voor hun kinderen en het gaf ruimte om te kijken wat hij nou écht wil. Ook heeft hij allerlei cursussen gevolgd in die tijd, daardoor weet hij ook zeker dat hij verder wil in de IT!',
           'Daarvoor deed hij o.a. support voor zo\'n bedrijf dat van die computerdingen maakt, van die routers, switches en dat soort dingen. Die waren altijd erg blij met hem weet ik, hij was er zelfs nog een keer werknemer van het jaar.',
-          'Daarvoor is hij ook nog even kerkelijk werker geweest en daarvoor heeft hij ook nog wel wat andere baantjes gehad, maar mijn geheugen begint mij nu wat in de steek te laten... Het is ook alweer even geleden he? ...',
+          'Daarvoor heeft hij ook nog wel wat andere baantjes gehad, maar mijn geheugen begint mij nu wat in de steek te laten... Het is ook alweer even geleden he? ...',
           'Misschien een keer zijn CV bekijken? Die staat volgens mij hiernaast...'
         ]
         })
