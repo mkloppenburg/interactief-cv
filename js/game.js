@@ -91,6 +91,7 @@ charactersMap.forEach((row, i) => {
             hold: 60
           },
           scale: 3,
+          animate: true,
           dialogue: ['Maarten zeg je? Die ken ik al van jongs af aan. Ik heb hem zien groeien van een 8-bit kindje, tot de grote man die hij nu is! ...', 
           'Hij fiets hierboven regelmatig door het bos. Of hij loopt er met zijn kinderen. ...',
         'Of hij zit een dorpje verderop op het terras of in de bioscoop. Gek op filmpjes kijken die man. ...',
@@ -112,7 +113,8 @@ charactersMap.forEach((row, i) => {
             hold: 60
           },
           scale: 3,
-          dialogue: ['Maarten? Ja, die heeft al best diplomas en certificaten. ...', 
+          animate: true,
+          dialogue: ['Best warm zo\'n winterjas, ik krijg \'m maar niet uit! Hoe dan ook... Maarten? Ja, die heeft al best diplomas en certificaten. ...', 
           'MBO ICT... HBO Theologie... Heel wat cursussen richting IT gedaan... En pas nog, bij een bootcamp van Young Capital certificaten voor EXIN Agile Scrum, ISTQB Foundation en Microsoft Azure Fundamentals behaald!',
           'Misschien een keer zijn CV bekijken? Die staat volgens mij hiernaast...'
         ]
@@ -133,6 +135,7 @@ charactersMap.forEach((row, i) => {
             hold: 60
           },
           scale: 3,
+          animate: true,
           dialogue: ['Of hij werkervaring heeft? Jazeker wel. ...', 
           'Op dit moment werkt hij voor Young Capital. Daar doet hij een IT Traineeship richting DevOps. Ik weet dat hij na zijn MBO-ICT iets anders op het HBO geleerd had, maar hij kwam er achter dat de IT toch echt zijn passie heeft. ...',
           'Daarvoor is hij een tijdje full-time ouder geweest. Vonden ze daar belangrijk, dat er iemand thuis was voor hun kinderen.',
