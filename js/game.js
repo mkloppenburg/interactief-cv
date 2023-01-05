@@ -13,7 +13,7 @@ const charactersMap = []
 for (let i = 0; i < charactersMapData.length; i += 70) {
   charactersMap.push(charactersMapData.slice(i, 70 + i))
 }
-console.log(charactersMap)
+// console.log(charactersMap)
 
 const boundaries = []
 const offset = {
@@ -73,7 +73,8 @@ charactersMap.forEach((row, i) => {
           animate: true,
           dialogue: ['Maarten?... ja daar heb ik wel over gehoord!', 
           'Nauwkeurig, analytisch, leergierig, betrokken, dat zijn vier woorden die hem goed omschrijven.',
-        'Hij staat altijd klaar om even te helpen. Als ik een probleem heb, dan weet hij er wel raad mee.']
+        'Hij staat altijd klaar om even te helpen. Als ik een probleem heb, dan weet hij er wel raad mee.', 
+        'Hij houd ervan om van die moeilijke puzzeltjes op te lossen. Werkt een stukje code niet? Lukt het niet om de CI/CD pipeline van github naar Azure werkend te krijgen? Hij bijt zich er wel in vast en komt met een oplossing.']
         })
       )
     }
