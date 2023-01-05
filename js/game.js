@@ -13,7 +13,7 @@ const charactersMap = []
 for (let i = 0; i < charactersMapData.length; i += 70) {
   charactersMap.push(charactersMapData.slice(i, 70 + i))
 }
-// console.log(charactersMap)
+console.log(charactersMap)
 
 const boundaries = []
 const offset = {
@@ -51,10 +51,12 @@ character4Img.src = 'img/character4.png'
 const character5Img = new Image()
 character5Img.src = 'img/character5.png'
 
+const characterKoeImg = new Image()
+characterKoeImg.src = 'img/characterkoe.png'
 
 charactersMap.forEach((row, i) => {
   row.forEach((symbol, j) => {
-    // 1026: 1e encounter bij huis1: persoonlijk
+    // 1026: 1e encounter bij huis1: werk
     if (symbol === 1026) {
       characters.push(
         new Character({
@@ -69,14 +71,13 @@ charactersMap.forEach((row, i) => {
           },
           scale: 3,
           animate: true,
-          dialogue: ['Maarten zeg je? Die ken ik al van jongs af aan. Ik heb hem zien groeien van een 8-bit kindje, tot de grote man die hij nu is! ...', 
-          'Hij fiets hierboven regelmatig door het bos. Of hij loopt er met zijn kinderen. ...',
-        'Of hij zit een dorpje verderop op het terras of in de bioscoop. Gek op filmpjes kijken die man. ...',
-      'Een echte levensgenieter en familieman!']
+          dialogue: ['Maarten?... ja daar heb ik wel over gehoord!', 
+          'Nauwkeurig, analytisch, leergierig, betrokken, dat zijn vier woorden die hem goed omschrijven.',
+        'Hij staat altijd klaar om even te helpen. Als ik een probleem heb, dan weet hij er wel raad mee.']
         })
       )
     }
-    // 1027: 2e encounter bos: werk
+    // 1027: 2e encounter bos: persoonlijk
     else if (symbol === 1027) {
       characters.push(
         new Character({
@@ -90,9 +91,10 @@ charactersMap.forEach((row, i) => {
             hold: 60
           },
           scale: 3,
-          dialogue: ['Maarten?... ja daar heb ik wel over gehoord!', 
-          'Nauwkeurig, analytisch, leergierig, betrokken, dat zijn vier woorden die hem goed omschrijven.',
-        'Hij staat altijd klaar om even te helpen. Als ik een probleem heb, dan weet hij er wel raad mee.']
+          dialogue: ['Maarten zeg je? Die ken ik al van jongs af aan. Ik heb hem zien groeien van een 8-bit kindje, tot de grote man die hij nu is! ...', 
+          'Hij fiets hierboven regelmatig door het bos. Of hij loopt er met zijn kinderen. ...',
+        'Of hij zit een dorpje verderop op het terras of in de bioscoop. Gek op filmpjes kijken die man. ...',
+      'Een echte levensgenieter en familieman!']
         })
       )
     }
@@ -141,26 +143,44 @@ charactersMap.forEach((row, i) => {
         })
       )
     }
-        // 1030: 5e encounter dok: contact
-        else if (symbol === 1030) {
-          characters.push(
-            new Character({
-              position: {
-                x: j * Boundary.width + offset.x,
-                y: i * Boundary.height + offset.y
-              },
-              image: character5Img,
-              frames: {
-                max: 4,
-                hold: 60
-              },
-              scale: 3,
-              animate: true,
-              dialogue: ['Of ik weet waar je Maarten kan bereiken? Oef... ik heb zo zijn nummer niet, maar... ', 'Als je hier een berichtje achterlaat, zal ik zijn accountmanager even vragen!']
-            })
-          )
-        }
-  
+    // 1030: 5e encounter dok: contact
+    else if (symbol === 1030) {
+        characters.push(
+        new Character({
+            position: {
+            x: j * Boundary.width + offset.x,
+            y: i * Boundary.height + offset.y
+            },
+            image: character5Img,
+            frames: {
+            max: 4,
+            hold: 60
+            },
+            scale: 3,
+            animate: true,
+            dialogue: ['Of ik weet waar je Maarten kan bereiken? Oef... ik heb zo zijn nummer niet, maar. ... ', 'Als je hier een berichtje achterlaat, zal ik zijn accountmanager even vragen!']
+        })
+        )
+    }
+    // 1031: 6e encounter koe: die zegt moooo?
+    else if (symbol === 1031) {
+        characters.push(
+          new Character({
+            position: {
+              x: j * Boundary.width + offset.x,
+              y: i * Boundary.height + offset.y
+            },
+            image: characterKoeImg,
+            frames: {
+              max: 2,
+              hold: 60
+            },
+            scale: 3,
+            dialogue: ['Moooooo..... waarom praat je met een koe? ...', 'Beetje gek, vind je zelf ook niet?']
+          })
+        )
+      }
+
     if (symbol !== 0) {
       boundaries.push(
         new Boundary({
