@@ -1,3 +1,13 @@
 body {
     background-color: black;
+    font-family: 'Moondance', serif;
+}
+h1 {
+    font-family: 'East Sea Dokdo', serif;
+}
+h5 {
+    font-family: 'Lora', serif;
+}
+.fa-brands {
+    font-size: x-large;
 }

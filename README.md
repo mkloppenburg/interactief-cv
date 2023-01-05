@@ -15,3 +15,4 @@ De hotspots zijn bewust linear opgesteld om de flow van informatie natuurlijk te
 - Chris Courses voor inspiratie: https://www.youtube.com/watch?v=yP5DKzriqXA
 - Cyporkador (itch.io) voor de tileset: https://cypor.itch.io/12x12-rpg-tileset
 - Tiled Map Editor: https://www.mapeditor.org/
+- pixel-boy voor de characters: https://pixel-boy.itch.io/ninja-adventure-asset-pack
