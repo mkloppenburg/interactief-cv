@@ -94,8 +94,8 @@ charactersMap.forEach((row, i) => {
           scale: 3,
           animate: true,
           dialogue: ['Maarten zeg je? Die ken ik al van jongs af aan. Ik heb hem zien groeien van een 8-bit kindje, tot de grote man die hij nu is! ...', 
-          'Hij fiets hierboven regelmatig door het bos. Of hij loopt er met zijn kinderen. ...',
-        'Of hij zit een dorpje verderop op het terras of in de bioscoop. Gek op filmpjes kijken die man. Ook sleutelt hij graag met computers en gamen is hij altijd wel voor in! ...',
+          'Hij fiets hierboven regelmatig op zijn mountainbike door het bos. Of hij loopt er met zijn kinderen. ...',
+        'Ook zie ik hem wel eens in een dorpje verderop op het terras zitten of in de bioscoop. Gek op filmpjes kijken die man. Verder sleutelt hij graag met computers en gamen is hij altijd wel voor in! ...',
       'Een echte levensgenieter en familieman!']
         })
       )
