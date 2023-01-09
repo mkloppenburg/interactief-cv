@@ -74,7 +74,8 @@ charactersMap.forEach((row, i) => {
           dialogue: ['Maarten?... ja daar heb ik wel over gehoord!', 
           'Nauwkeurig, analytisch, leergierig, betrokken, dat zijn vier woorden die hem goed omschrijven.',
         'Hij staat altijd klaar om even te helpen. Als ik een probleem heb, dan weet hij er wel raad mee.', 
-        'Hij houd ervan om van die moeilijke puzzeltjes op te lossen. Werkt een stukje code niet? Lukt het niet om de CI/CD pipeline van github naar Azure werkend te krijgen? Hij bijt zich er wel in vast en komt met een oplossing.']
+        'Hij houd ervan om van die moeilijke puzzeltjes op te lossen. Werkt een stukje code niet? Lukt het niet om de CI/CD pipeline van github naar Azure werkend te krijgen? Hij bijt zich er wel in vast en komt met een oplossing.'],
+          mapidentifier: symbol
         })
       )
     }
@@ -96,7 +97,8 @@ charactersMap.forEach((row, i) => {
           dialogue: ['Maarten zeg je? Die ken ik al van jongs af aan. Ik heb hem zien groeien van een 8-bit kindje, tot de grote man die hij nu is! ...', 
           'Hij fiets hierboven regelmatig op zijn mountainbike door het bos. Of hij loopt er met zijn kinderen. ...',
         'Ook zie ik hem wel eens in een dorpje verderop op het terras zitten of in de bioscoop. Gek op filmpjes kijken die man. Verder sleutelt hij graag met computers en gamen is hij altijd wel voor in! ...',
-      'Een echte levensgenieter en familieman!']
+      'Een echte levensgenieter en familieman!'],
+          mapidentifier: symbol
         })
       )
     }
@@ -118,7 +120,8 @@ charactersMap.forEach((row, i) => {
           dialogue: ['Best warm zo\'n winterjas, ik krijg \'m maar niet uit! Hoe dan ook... Maarten? Ja, die heeft al best wat diplomas en certificaten. ...', 
           'MBO ICT... HBO Theologie... Heel wat cursussen richting IT gedaan... En pas nog, bij een bootcamp van Young Capital certificaten voor EXIN Agile Scrum, ISTQB Foundation en Microsoft Azure Fundamentals behaald!',
           'Misschien een keer zijn CV bekijken? Die staat volgens mij hiernaast...'
-        ]
+        ],
+        mapidentifier: symbol
         })
       )
     }
@@ -143,7 +146,8 @@ charactersMap.forEach((row, i) => {
           'Daarvoor deed hij o.a. support voor zo\'n bedrijf dat van die computerdingen maakt, van die routers, switches en dat soort dingen. Die waren altijd erg blij met hem weet ik, hij was er zelfs nog een keer werknemer van het jaar.',
           'Daarvoor heeft hij ook nog wel wat andere baantjes gehad, maar mijn geheugen begint mij nu wat in de steek te laten... Het is ook alweer even geleden he? ...',
           'Misschien een keer zijn CV bekijken? Die staat volgens mij hiernaast...'
-        ]
+        ],
+        mapidentifier: symbol
         })
       )
     }
@@ -162,7 +166,8 @@ charactersMap.forEach((row, i) => {
             },
             scale: 3,
             animate: true,
-            dialogue: ['Of ik weet waar je Maarten kan bereiken? Oef... ik heb zo zijn nummer niet, maar. ... ', 'Als je hier een berichtje achterlaat, zal ik zijn accountmanager even vragen!']
+            dialogue: ['Of ik weet waar je Maarten kan bereiken? Oef... ik heb zo zijn nummer niet, maar. ... ', 'Als je hier een berichtje achterlaat, zal ik zijn accountmanager even vragen!'],
+            mapidentifier: symbol
         })
         )
     }
@@ -180,7 +185,8 @@ charactersMap.forEach((row, i) => {
               hold: 60
             },
             scale: 3,
-            dialogue: ['Moooooo..... waarom praat je met een koe? ...', 'Beetje gek, vind je zelf ook niet?']
+            dialogue: ['Moooooo..... waarom praat je met een koe? ...', 'Beetje gek, vind je zelf ook niet?'],
+            mapidentifier: symbol
           })
         )
       }
@@ -416,6 +422,7 @@ window.addEventListener('keydown', (e) => {
   if (player.isInteracting) {
     switch (e.key) {
       case ' ':
+        console.log(player.interactionAsset.mapidentifier)
         player.interactionAsset.dialogueIndex++
 
         const { dialogueIndex, dialogue } = player.interactionAsset
@@ -424,12 +431,15 @@ window.addEventListener('keydown', (e) => {
             player.interactionAsset.dialogue[dialogueIndex]
           return
         }
+        // make contact screen appear if end character is chosen
+        if (player.interactionAsset.mapidentifier === 1030) {
+          document.querySelector('#contactFormBox').style.display = 'block'     
+        }
 
         // finish conversation
         player.isInteracting = false
         player.interactionAsset.dialogueIndex = 0
         document.querySelector('#characterDialogueBox').style.display = 'none'
-
         break
     }
     return

@@ -109,7 +109,8 @@ class Sprite {
       animate = false,
       rotation = 0,
       scale = 1,
-      dialogue = ['']
+      dialogue = [''],
+      mapidentifier
     }) {
       super({
         position,
@@ -119,10 +120,12 @@ class Sprite {
         sprites,
         animate,
         rotation,
-        scale
+        scale,
+        mapidentifier
       })
   
       this.dialogue = dialogue
       this.dialogueIndex = 0
+      this.mapidentifier = mapidentifier
     }
   }
