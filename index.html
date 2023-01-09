@@ -51,13 +51,32 @@
               padding: 0px;
             "
             class="border border-black border-5 rounded-3 text-black">
-                <h2>Contact</h2><a href="#" onclick="document.querySelector('#contactFormBox').style.display = 'none'">sluit</a><br>
+                <h2>Contact</h2><a href="#" onclick="document.querySelector('#contactFormBox').style.display = 'none'" class="link-secondary" >Contactformulier sluiten</a><br>
                 <input type="text" class="form-control" id="naam" placeholder="Voer hier je naam in ..." size="20"><br>
                 <input type="email" class="form-control" id="email" placeholder="Voer hier je e-mailadres in ..." size="20"><br>
                 <textarea id="bericht" name="bericht" style="width:100%; height: 70px;" maxlength="300" placeholder="Voer hier je bericht in ..."></textarea>
                 <button type="button" class="btn btn-primary" onclick="stuurMail()" style="margin-top: 6px;">Verstuur bericht</button>
               </div>
+            
+            <div 
+            id="contactSuccesBox"
+            style="
+            background-color: white;
+            height: 350px;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            display: none;
+            padding: 0px;
+          "
+          class="border border-black border-5 rounded-3 text-black">
+              <h2>Contact</h2>
+              Bedankt!<br>
+              Bericht succesvol verzonden!<br />
+              <a href="#" onclick="document.querySelector('#contactSuccesBox').style.display = 'none'" class="link-secondary" ><br>Contactformulier sluiten</a><br>
             </div>
+        </div>
             </div>
             <div class="col-2 text-white-50">
                 Instructie:<br>
@@ -71,7 +90,9 @@
                 spatie - interactie<br>
                 <br>
                 <a href="files/CV Maarten Kloppenburg YoungCapital NEXT.pdf" class="link-secondary" target="_blank">Direct CV bekijken?</a><br>
+                <a href="#" class="link-secondary" onclick="document.querySelector('#contactFormBox').style.display = 'block'">Direct een berichtje sturen?</a><br>
                 <br>
+                
                 <span>
                 <a href="https://www.linkedin.com/in/maarten-kloppenburg-18bb0229/" target="_blank"><i class="fa-brands fa-linkedin text-white-50"></i></a>
                 <a href="https://github.com/mkloppenburg" target="_blank"><i class="fa-brands fa-github text-white-50"></i></a>

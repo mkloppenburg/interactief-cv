@@ -35,6 +35,13 @@ function checkForCharacterCollision({
   }
 }
 
+function handleErrors(response) {
+  if (!response.ok) {
+      throw Error(response.statusText);
+  }
+  return response;
+}
+
 function stuurMail(){
   let emailBericht = {
       naam: document.getElementById('naam').value,
@@ -49,7 +56,11 @@ function stuurMail(){
       },
       body: JSON.stringify(emailBericht)
   })
-  .then((response) => console.log(response))
+  .then(handleErrors)
+  .then(response => {
+    document.querySelector('#contactFormBox').style.display = 'none';
+    document.querySelector('#contactSuccesBox').style.display = 'block';
+    })
   .catch(error => {
       console.log(error);
   });
